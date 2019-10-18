@@ -30,14 +30,14 @@ def find_greater_pair(src)
   greater_numbers
 end
 
-#def find_greater_pair(src)
-#  even_pairs = []
-#  row_index = 0
-#  while row_index < src.count do
-#    if src[row_index].sum % 2 and src[row_index][0] % 2 == 0
-#      even_pairs << src[row_index].sum
-#    end
-#    row_index += 1
-#  end
-#  even_pairs.sum
-#end
+def total_even_pairs(src)
+  even_pairs = []
+  row_index = 0
+  while row_index < src.count do
+    if src[row_index].sum % 2 and src[row_index][0] % 2 == 0
+      even_pairs << src[row_index].sum
+    end
+    row_index += 1
+  end
+  even_pairs.sum
+end
